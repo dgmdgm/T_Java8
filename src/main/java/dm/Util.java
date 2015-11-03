@@ -3,7 +3,7 @@ package dm;
 import java.io.Console;
 
 /**
- * My Bits utilities.
+ * My utilities.
  */
 public class Util
 {
@@ -14,8 +14,12 @@ public class Util
     }
 
     // Bits Console features
-    static final Console s_console = System.console();// Print to either the console or sysout
+    static final Console s_console = System.console();
 
+
+    /**
+     * Prints to either the console or sysout
+     */
     public static void myprintf(final String format, final Object... args)
     {
         if (s_console != null)

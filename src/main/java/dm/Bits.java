@@ -1,9 +1,13 @@
 package dm;
 
 
-// left circular shift
+/**
+ * Bit manipulation utilities.
+ *
+ * @author DM
+ */
 public class Bits {
-
+/**/
     public static byte leftCircularShift(byte n, int m) {
         m %= 8;
         return (byte)(((n & (0xff << (8 - m))) >>> (8 - m)) | (n << m));
